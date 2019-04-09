@@ -81,7 +81,7 @@ def calcShannonEnt(dataSet):
     # # 统计标签出现的次数
     # label_count = Counter(data[-1] for data in dataSet)
     # # 计算概率
-    # probs = [p[1] / len(dataSet) for p in label_count.items()]
+    # probs = [float(p[1]) / len(dataSet) for p in label_count.items()]
     # # 计算香农熵
     # shannonEnt = sum([-p * log(p, 2) for p in probs])
     # # -----------计算香农熵的第二种实现方式end--------------------------------------------------------------------------------
